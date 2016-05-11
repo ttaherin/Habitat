@@ -114,8 +114,8 @@
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Unicorn, Version=3.1.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Unicorn.Core.3.1.7\lib\net45\Unicorn.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Unicorn\Unicorn.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
