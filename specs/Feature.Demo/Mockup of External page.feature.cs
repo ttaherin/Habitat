@@ -17,6 +17,7 @@ namespace Sitecore.Feature.Demo.Specflow
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [Xunit.TraitAttribute("Category", "UI")]
     public partial class MockupOfExternalPageFeature : Xunit.IClassFixture<MockupOfExternalPageFeature.FixtureData>, System.IDisposable
     {
         
@@ -35,7 +36,8 @@ namespace Sitecore.Feature.Demo.Specflow
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Mockup of External page", "In order to start a demo story from an external page\r\nAs a technical presales con" +
                     "sultant\r\nI want to be able to show a mockup of an external page, e.g. search eng" +
-                    "ine page with adword links to a campaign on the website", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    "ine page with adword links to a campaign on the website", ProgrammingLanguage.CSharp, new string[] {
+                        "UI"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -76,20 +78,20 @@ namespace Sitecore.Feature.Demo.Specflow
         [Xunit.FactAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Mockup of External page")]
         [Xunit.TraitAttribute("Description", "Demo_UC1_Show Google search engine mockup")]
-        [Xunit.TraitAttribute("Category", "NeedImplementation")]
+        [Xunit.TraitAttribute("Category", "Ready")]
         public virtual void Demo_UC1_ShowGoogleSearchEngineMockup()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Demo_UC1_Show Google search engine mockup", new string[] {
-                        "NeedImplementation"});
-#line 8
-this.ScenarioSetup(scenarioInfo);
+                        "Ready"});
 #line 9
- testRunner.Given("Habitat website is opened on Main Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 10
- testRunner.When("Actor navigates to Demo site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("Habitat website is opened on Main Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 11
- testRunner.Then("URl contains Demo site url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("Actor navigates to Demo site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
+ testRunner.Then("URl contains Demo site url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 13
  testRunner.And("Demo site title equals to <Google>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -98,7 +100,7 @@ this.ScenarioSetup(scenarioInfo);
                         "Google Search"});
             table1.AddRow(new string[] {
                         "I\'m Feeling Lucky"});
-#line 13
+#line 14
  testRunner.And("Following buttons are present on the Demo site page", ((string)(null)), table1, "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -107,25 +109,25 @@ this.ScenarioSetup(scenarioInfo);
         [Xunit.FactAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Mockup of External page")]
         [Xunit.TraitAttribute("Description", "Demo_UC2_Show predefined keyword")]
-        [Xunit.TraitAttribute("Category", "NeedImplementation")]
+        [Xunit.TraitAttribute("Category", "Ready")]
         public virtual void Demo_UC2_ShowPredefinedKeyword()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Demo_UC2_Show predefined keyword", new string[] {
-                        "NeedImplementation"});
-#line 20
-this.ScenarioSetup(scenarioInfo);
+                        "Ready"});
 #line 21
- testRunner.Given("Mockup of Google page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 22
- testRunner.When("Actor enters test search text in to search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("Mockup of Google page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 23
+ testRunner.When("Actor enters test search text in to search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 24
  testRunner.And("Actor clicks Google Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "Text"});
             table2.AddRow(new string[] {
                         "Sitecore Habitat - Flexibility, Simplicity, Extensibility‎"});
-#line 24
+#line 25
  testRunner.Then("Search results contains following sitelink", ((string)(null)), table2, "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -134,22 +136,22 @@ this.ScenarioSetup(scenarioInfo);
         [Xunit.FactAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Mockup of External page")]
         [Xunit.TraitAttribute("Description", "Demo_UC3_Adwords link on the Google search results mockup")]
-        [Xunit.TraitAttribute("Category", "NeedImplementation")]
+        [Xunit.TraitAttribute("Category", "Ready")]
         public virtual void Demo_UC3_AdwordsLinkOnTheGoogleSearchResultsMockup()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Demo_UC3_Adwords link on the Google search results mockup", new string[] {
-                        "NeedImplementation"});
-#line 31
-this.ScenarioSetup(scenarioInfo);
+                        "Ready"});
 #line 32
- testRunner.Given("Mockup of Google page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 33
- testRunner.When("Actor enters new test search text in to search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("Mockup of Google page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 34
- testRunner.And("Actor clicks Google Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("Actor enters new test search text in to search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 35
- testRunner.And("Actor clicks Sitecore Habitat - Flexibility, Simplicity, Extensibility‎ link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("Actor clicks Google Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 36
+ testRunner.And("Actor clicks Sitecore Habitat - Flexibility, Simplicity, Extensibility‎ link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 37
  testRunner.Then("Page url contains Campaign ID", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -158,20 +160,20 @@ this.ScenarioSetup(scenarioInfo);
         [Xunit.FactAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Mockup of External page")]
         [Xunit.TraitAttribute("Description", "Demo_UC4_Campaign is triggered on the website")]
-        [Xunit.TraitAttribute("Category", "NeedImplementation")]
+        [Xunit.TraitAttribute("Category", "Ready")]
         public virtual void Demo_UC4_CampaignIsTriggeredOnTheWebsite()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Demo_UC4_Campaign is triggered on the website", new string[] {
-                        "NeedImplementation"});
-#line 41
-this.ScenarioSetup(scenarioInfo);
+                        "Ready"});
 #line 42
- testRunner.Given("Mockup of Google page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 43
- testRunner.When("Actor enters new test search text in to search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("Mockup of Google page is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 44
- testRunner.And("Actor clicks Google Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("Actor enters new test search text in to search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 45
+ testRunner.And("Actor clicks Google Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 46
  testRunner.And("Actor clicks Sitecore Habitat - Flexibility, Simplicity, Extensibility‎ link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();

@@ -1,7 +1,8 @@
-﻿Feature: Allow outcomes to be triggered on WFFM
+﻿@UI
+Feature: Allow outcomes to be triggered on WFFM
 	
 
-@NeedImplementation 
+@ManualOnly
 Scenario: Allow outcomes to be triggered on WFFM_UC2_Assign Form Action
 	Given Form Designer is opened for Web Form for Marketers
 	And Form <Leave an Email> is selected
@@ -15,15 +16,15 @@ Scenario: Allow outcomes to be triggered on WFFM_UC2_Assign Form Action
 	And User navigates to Forms page 
 	And User enters <kovWFFM@sitecore.net> to the Email field
 	And User clicks <Submit> button
-	And Actor selects <Open visit details panel> slidebar
-	And Actor expands <Personal Information> header on xDB panel
+	And Actor selects Open visit details panel slidebar
+	And Actor expands Personal Information header on xDB panel
 	Then <Outcomes> contains following values
 	| field value |
 	| Sales Lead  |
 	
 
 
-@NeedImplementation 
+@ManualOnly
 Scenario: Allow outcomes to be triggered on WFFM_UC2_Assign few Form Actions
 	Given Form Designer is opened for Web Form for Marketers
 	And Form <Leave an Email> is selected
@@ -40,8 +41,8 @@ Scenario: Allow outcomes to be triggered on WFFM_UC2_Assign few Form Actions
 	And User navigates to Forms page 
 	And User enters <kovWFFM2@sitecore.net> to the Email field
 	And User clicks <Submit> button
-	And Actor selects <Open visit details panel> slidebar
-	And Actor expands <Personal Information> header on xDB panel
+	And Actor selects Open visit details panel slidebar
+	And Actor expands Personal Information header on xDB panel
 	Then <Outcomes> contains following values
 	| field value    |
 	| Sales Lead     |
@@ -49,7 +50,7 @@ Scenario: Allow outcomes to be triggered on WFFM_UC2_Assign few Form Actions
 
 
 
-@NeedImplementation 
+@ManualOnly
 Scenario: Allow outcomes to be triggered on WFFM_UC3_Try to assign folder with outcomes 
 	Given Form Designer is opened for Web Form for Marketers
 	And Form <Leave an Email> is selected
@@ -64,7 +65,7 @@ Scenario: Allow outcomes to be triggered on WFFM_UC3_Try to assign folder with o
 
 
 
-@NeedImplementation 
+@ManualOnly 
 Scenario: Allow outcomes to be triggered on WFFM_UC4_Assign outocome under some folder with outcomes
 	Given Sitecore item should be created
 	| Under item path                                           | Template ID                          | Item name | Group                                |
@@ -84,8 +85,26 @@ Scenario: Allow outcomes to be triggered on WFFM_UC4_Assign outocome under some 
 	And User navigates to Forms page 
 	And User enters <kovWFFM3@sitecore.net> to the Email field
 	And User clicks <Submit> button
-	And Actor selects <Open visit details panel> slidebar
-	And Actor expands <Personal Information> header on xDB panel
-	Then <Outcomes> contains following values
+	And Actor selects Open visit details panel slidebar
+	And Actor expands Personal Information header on xDB panel
+	Then Outcomes contains following values
 	| field value |
 	| QA Lead     |
+
+
+@Ready 
+Scenario: Allow outcomes to be triggered on WFFM_UC5_Triggger outcome on Demo form 
+	Given Habitat website is opened on Forms page
+	When Actor enteres following data into Leave an Email form fields
+	| Email                   |
+	| kovOutcome@sitecore.net |
+	And Actor clicks Submit button on Leave an Email form
+	And Actor selects Open visit details panel slidebar
+	And Actor expands Onsite Behavior header on xDB panel
+	Then Outcomes contains following values
+	| field value            |
+	| Now                    |
+	| Lead management funnel |
+	| Opportunity            |
+
+	  

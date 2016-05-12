@@ -33,8 +33,7 @@ namespace Sitecore.Feature.Accounts.Specflow
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Serialise users and roles", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
-                    "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Serialise users and roles", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,88 +73,141 @@ namespace Sitecore.Feature.Accounts.Specflow
         
         [Xunit.FactAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Serialise users and roles")]
-        [Xunit.TraitAttribute("Description", "Serialise users and roles_UC1_")]
-        [Xunit.TraitAttribute("Category", "NeedImplementation")]
-        public virtual void SerialiseUsersAndRoles_UC1_()
+        [Xunit.TraitAttribute("Description", "Serialise users and roles_UC1_Habitat modules roles available in Role Manager")]
+        [Xunit.TraitAttribute("Category", "Ready")]
+        public virtual void SerialiseUsersAndRoles_UC1_HabitatModulesRolesAvailableInRoleManager()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serialise users and roles_UC1_", new string[] {
-                        "NeedImplementation"});
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serialise users and roles_UC1_Habitat modules roles available in Role Manager", new string[] {
+                        "Ready"});
+#line 5
 this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Role"});
+            table1.AddRow(new string[] {
+                        "habitat\\Project Habitat Content Author"});
+            table1.AddRow(new string[] {
+                        "habitat\\Project Habitat Modules Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Accounts Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Demo Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature FAQ Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Identity Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Language Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Maps Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Media Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Metadata Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Multisite Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Navigation Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature News Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature PageContent Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Person Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Search Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Social Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Feature Teasers Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Foundation Assets Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Foundation Indexing Admin"});
+            table1.AddRow(new string[] {
+                        "modules\\Foundation Multisite Admin"});
 #line 8
- testRunner.Given("I have entered 50 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
- testRunner.And("I have entered 70 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 10
- testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 11
- testRunner.Then("the result should be 120 on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("Following roles available", ((string)(null)), table1, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Xunit.FactAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Serialise users and roles")]
-        [Xunit.TraitAttribute("Description", "Serialise users and roles_UC2_")]
-        [Xunit.TraitAttribute("Category", "NeedImplementation")]
-        public virtual void SerialiseUsersAndRoles_UC2_()
+        [Xunit.TraitAttribute("Description", "Serialise users and roles_UC2_Non-admin user without modules admin rights")]
+        [Xunit.TraitAttribute("Category", "Ready")]
+        public virtual void SerialiseUsersAndRoles_UC2_Non_AdminUserWithoutModulesAdminRights()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serialise users and roles_UC2_", new string[] {
-                        "NeedImplementation"});
-#line 14
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serialise users and roles_UC2_Non-admin user without modules admin rights", new string[] {
+                        "Ready"});
+#line 34
 this.ScenarioSetup(scenarioInfo);
-#line 15
- testRunner.Given("I have entered 50 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 16
- testRunner.And("I have entered 70 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 17
- testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 18
- testRunner.Then("the result should be 120 on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Role"});
+            table2.AddRow(new string[] {
+                        "habitat\\Project Habitat Content Author"});
+#line 90
+ testRunner.Given("User habitat\\UserRoles with u password and following roles created in Habitat", ((string)(null)), table2, "Given ");
+#line 94
+ testRunner.Then("habitat\\UserRoles has Deny Write access to all available item fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Xunit.FactAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Serialise users and roles")]
-        [Xunit.TraitAttribute("Description", "Serialise users and roles_UC3_")]
-        [Xunit.TraitAttribute("Category", "NeedImplementation")]
-        public virtual void SerialiseUsersAndRoles_UC3_()
+        [Xunit.TraitAttribute("Description", "Serialise users and roles_UC3_Admin user with modules admin rights")]
+        [Xunit.TraitAttribute("Category", "Ready")]
+        public virtual void SerialiseUsersAndRoles_UC3_AdminUserWithModulesAdminRights()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serialise users and roles_UC3_", new string[] {
-                        "NeedImplementation"});
-#line 21
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serialise users and roles_UC3_Admin user with modules admin rights", new string[] {
+                        "Ready"});
+#line 99
 this.ScenarioSetup(scenarioInfo);
-#line 22
- testRunner.Given("I have entered 50 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 23
- testRunner.And("I have entered 70 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 24
- testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 25
- testRunner.Then("the result should be 120 on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Role"});
+            table3.AddRow(new string[] {
+                        "habitat\\Project Habitat Content Author"});
+            table3.AddRow(new string[] {
+                        "habitat\\Project Habitat Modules Admin"});
+#line 155
+ testRunner.Given("User habitat\\UserRoles with u password and following roles created in Habitat", ((string)(null)), table3, "Given ");
+#line 160
+ testRunner.Then("habitat\\UserRoles has  Write access to all available item fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Xunit.FactAttribute()]
         [Xunit.TraitAttribute("FeatureTitle", "Serialise users and roles")]
-        [Xunit.TraitAttribute("Description", "Serialise users and roles_UC4_")]
-        [Xunit.TraitAttribute("Category", "NeedImplementation")]
-        public virtual void SerialiseUsersAndRoles_UC4_()
+        [Xunit.TraitAttribute("Description", "Serialise users and roles_UC4_Admin user with multisite admin rights")]
+        [Xunit.TraitAttribute("Category", "Ready")]
+        public virtual void SerialiseUsersAndRoles_UC4_AdminUserWithMultisiteAdminRights()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serialise users and roles_UC4_", new string[] {
-                        "NeedImplementation"});
-#line 28
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serialise users and roles_UC4_Admin user with multisite admin rights", new string[] {
+                        "Ready"});
+#line 164
 this.ScenarioSetup(scenarioInfo);
-#line 29
- testRunner.Given("I have entered 50 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 30
- testRunner.And("I have entered 70 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 31
- testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 32
- testRunner.Then("the result should be 120 on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Role"});
+            table4.AddRow(new string[] {
+                        "habitat\\Project Habitat Content Author"});
+            table4.AddRow(new string[] {
+                        "habitat\\Project Habitat Modules Admin"});
+#line 220
+ testRunner.Given("User habitat\\UserRoles with u password and following roles created in Habitat", ((string)(null)), table4, "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Item name"});
+            table5.AddRow(new string[] {
+                        "DatasourceLocation"});
+            table5.AddRow(new string[] {
+                        "DatasourceTemplate"});
+#line 228
+    testRunner.Then("habitat\\UserRoles has  Write access to following item fields", ((string)(null)), table5, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

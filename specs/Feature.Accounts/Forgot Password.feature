@@ -1,4 +1,5 @@
-﻿Feature: Forgot Password
+﻿@UI
+Feature: Forgot Password
 
 
 
@@ -79,7 +80,7 @@ Scenario: Accounts_Forgot Password_UC5_Invalid e-mail
 	And Page URL ends on /Forgot-Password
 
 
-	@NeedImplementation
+	@Ready
 Scenario: Accounts_Forgot Password_UC6_Try to reset password for unknown user
 	Given User is registered in Habitat and logged out 
 	| Email            | Password | ConfirmPassword |

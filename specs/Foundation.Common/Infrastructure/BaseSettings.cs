@@ -26,5 +26,8 @@
     public static string DemoSiteURL => ConfigurationManager.AppSettings["demoSiteUrl"];
 
     public static string DemoSiteCampaignUrl => ConfigurationManager.AppSettings["demoSiteCampaignUrl"];
-  }
+
+    public static string FormsPageUrl =>BaseSettings.BaseUrl + ConfigurationManager.AppSettings["formsPageUrl"];
+    public static string GettingStartedPageUrl => BaseSettings.BaseUrl + ConfigurationManager.AppSettings["GettingStartedPageUrl"];
+    }
 }

@@ -1,4 +1,5 @@
-﻿Feature: Contact Identification
+﻿@UI
+Feature: Contact Identification
 	
 As a sales person 
 I want to show that Sitecore tracks the indentifiction of a visitor 
@@ -82,7 +83,7 @@ Scenario: Accounts_Contact Identification_UC4_Clear browser cookies
 
 
 
-@InProgress
+@Ready
 Scenario: Accounts_Contact Identification_UC5_Inspect info for known user
 	Given Habitat website is opened on Main Page
 	And User was Login to Habitat
